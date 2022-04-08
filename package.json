@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/Emily-MVaz/employee-tracker#readme",
   "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.2.2",
     "mysql2": "^2.3.3"
   }
 }
