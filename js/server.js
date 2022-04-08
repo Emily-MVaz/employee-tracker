@@ -40,6 +40,7 @@ const promptUser = () => {
           "Add Role",
           "Add Employee",
           "Update Employee Role",
+          "Exit",
         ],
       },
     ])
@@ -48,7 +49,35 @@ const promptUser = () => {
 
       // choose to view all departments
       if (choices === "View All Departments") {
-        view;
+        viewAllDepartments;
+      }
+
+      if (choices === "View All Roles") {
+        viewAllRoles;
+      }
+
+      if (choices === "View All Employees") {
+        viewAllEmployees;
+      }
+
+      if (choices === "Add Department") {
+        addDepartment;
+      }
+
+      if (choices === "Add Role") {
+        addRole;
+      }
+
+      if (choices === "Add Employee") {
+        addEmployee;
+      }
+
+      if (choices === "Update Employee Role") {
+        updateEmployeeRole;
+      }
+
+      if (choices === "Exit") {
+        connection.end();
       }
     });
 };
